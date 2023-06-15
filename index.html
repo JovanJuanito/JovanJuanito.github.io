@@ -4,11 +4,217 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website github</title>
+    <style src="style.css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        
+        body{
+            display: block;
+            position: relative;
+            height: 1000px;
+            background-image: url(https://cdn.discordapp.com/attachments/1023922243316748348/1118720319201484800/06b7d157-6377-4d29-82fa-7dc4ec3f4f4d.png);
+            background-size: 100% 100%;
+            background-repeat:no-repeat;
+        }
+
+        div.container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        div.Navbar{ 
+            position: absolute ;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            background-color: rgba(40, 42, 49, 0.281);
+            justify-content: space-around;
+        }
+
+        div.Navbar ul{
+            width: 500px;
+            display: flex;
+            position: relative;
+            list-style: none;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 5px;
+        }
+
+        div.Navbar ul li {
+            display: flex;
+            position: relative;
+            margin-top: 40px;
+            /* width: 500px; */
+            /* justify-content: space-evenly; */
+        }
+
+        div.Navbar ul li a{
+            color: white;
+            text-decoration: none;
+            font-family:'Raleway', sans-serif;
+            font-size: 25px;
+        }
+
+        div.Navbar ul img{
+            display: flex;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+
+        div.container p{
+            display:none;
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            margin-top: 100px;
+            margin-left: 300px;
+            width: 200px;
+            flex-direction: column;
+            font-family: "Raleway", sans-serif;
+            
+        }
+
+        header{
+            width: 100%;
+            display: none;
+            /* position: fixed; */
+            color: white;
+            margin-top: 100px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        header h1{
+            display: flex;
+            width: 500px;
+            background-color: rgba(65, 75, 82, 0.548);
+            justify-content: center;
+            animation: 4.5s backgroundcolor -3s;
+        }
+
+        header p1 {
+            display: flex;
+            margin-right:350px;
+            margin-top: 20px;
+            margin-bottom: -50px;
+            max-width: 300px;
+            background-color: rgba(65, 75, 82, 0.548);
+            justify-content: center;
+            align-items: center;
+            animation: 2s backgroundcolor ;
+            font-family: "Raleway", sans-serif;
+        }
+
+        header p2 {
+            display: flex;
+            margin-left:350px;
+            margin-top: 20px;
+            margin-bottom: -50px;
+            max-width: 300px;
+            background-color: rgba(65, 75, 82, 0.548);
+            justify-content: center;
+            align-items: center;
+            animation: 3s backgroundcolor ;
+            font-family: "Raleway", sans-serif;
+        }
+
+        header p3 {
+            display: flex;
+            margin-right:350px;
+            margin-top: 20px;
+            margin-bottom: -50px;
+            max-width: 300px;
+            background-color: rgba(65, 75, 82, 0.548);
+            justify-content: center;
+            align-items: center;
+            animation: 4s backgroundcolor ;
+            font-family: "Raleway", sans-serif;
+        }
+
+        header p4 {
+            display: flex;
+            margin-left:350px;
+            margin-top: 20px;
+            margin-bottom: -50px;
+            max-width: 300px;
+            background-color: rgba(65, 75, 82, 0.548);
+            justify-content: center;
+            align-items: center;
+            animation: 5s backgroundcolor ;
+            font-family: "Raleway", sans-serif;
+        }
+
+        @keyframes backgroundcolor {
+            from{
+                background-color: rgba(0, 0, 0, 0);
+                color: rgba(0, 0, 0, 0);    
+            }
+
+            to {
+                background-color: rgba(65, 75, 82, 0.548);
+                color: white;
+            }
+        }
+
+        @media screen and (max-width:600px){
+            header p1{
+                margin: auto;
+                margin-top: 10px;
+            }
+
+            header p2{
+                margin: auto;
+                margin-top: 10px;
+            }
+
+            header p3{
+                margin: auto;
+                margin-top: 10px;
+            }
+
+            header p4{
+                margin: auto;
+                margin-top: 10px;
+            }
+        }
+
+    </style>
+    <script src="script.js"></script>
 </head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
 <body>
-    <h1>Hello, github pages</h1>
-    <p>Welcome</p>
-    <br>
+    <div class="container">
+        <div class="Navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <img src="https://cdn.discordapp.com/attachments/943320082304602132/1118064385030619256/1000094737-unscreen.gif" id="burger">
+                <li id="About"><a href="">About</a></li>
+            </ul>
+        </div>
+        <header>
+            <h1>Welcome</h1>
+            <p1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus minima doloribus vel perferendis magni possimus repudiandae quidem saepe labore inventore corporis nostrum, odit dignissimos fuga rerum fugiat officia ut ab!</p1>
+            <p2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus minima doloribus vel perferendis magni possimus repudiandae quidem saepe labore inventore corporis nostrum, odit dignissimos fuga rerum fugiat officia ut ab!</p2>
+            <p3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus minima doloribus vel perferendis magni possimus repudiandae quidem saepe labore inventore corporis nostrum, odit dignissimos fuga rerum fugiat officia ut ab!</p3>
+            <p4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus minima doloribus vel perferendis magni possimus repudiandae quidem saepe labore inventore corporis nostrum, odit dignissimos fuga rerum fugiat officia ut ab!</p4>
+        </header>
+        <p id="About--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptatem vero autem vitae laboriosam temporibus rem officia tempora, quas explicabo quae. Voluptate, architecto eum! Accusantium veniam repellendus omnis consequuntur sunt. <a href="">Learn more!</a></p>
+        <!-- <footer>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, perferendis explicabo. Repudiandae, assumenda, ut quaerat earum ad qui quibusdam, beatae voluptate repellendus explicabo natus sint rerum voluptatibus laudantium placeat molestiae!</p>
+        </footer> -->
+    </div>
+    
 </body>
 </html>
